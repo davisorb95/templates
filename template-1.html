@@ -12,25 +12,23 @@
     html,
     body {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: normal;
-        margin: 1rem;
         padding: 0;
         box-sizing: border-box;
         overflow: visible;
     }
 
     @page {
-        size: A4;
+        size: letter;
     }
 
     .header {
         padding: 0 0.5rem 0.5rem 0.5rem;
-        margin-bottom: 1rem;
     }
 
     .title {
-        font-size: 1.875rem;
+        font-size: 1.5rem;
         font-weight: bold;
         margin: 0;
         text-align: center;
@@ -70,7 +68,9 @@
 
     .image {
         margin: 1rem;
-        max-height: 32rem;
+        height: 200px;
+        object-fit: contain;
+        width: calc((100%/3) - 2rem);
     }
 
     ul {
@@ -87,9 +87,9 @@
 
     .footer {
         position: fixed;
-        left: 1rem;
-        right: 1rem;
-        bottom: 1rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -116,21 +116,17 @@
         margin-bottom: 1rem;
     }
 
-    .mb-8 {
-        margin-bottom: 2rem;
-    }
-
     .border-b-2 {
         border-bottom: 2px solid black;
     }
 
-    .h-8 {
-        height: 2rem;
+    .h-4 {
+        height: 1rem;
     }
 </style>
 
 <body>
-    <table>
+    <table class="w-full">
         <tbody>
             <tr>
                 <td>
@@ -139,7 +135,7 @@
                     </div>
 
                     <div class="mb-4">
-                        <h2 class="subtitle text--underline mb-2">Watchlist Information:</h2>
+                        <h2 class="subtitle text--underline">Watchlist Information:</h2>
                         <table>
                             <tbody>
                                 <tr>
@@ -178,20 +174,20 @@
                         </table>
                     </div>
 
-                    <h2 class="subtitle text--underline mb-2">Image:</h2>
-                    <div class="images mb-4">
-                        <!-- <img 
+                    <h2 class="subtitle text--underline">Image:</h2>
+                    <div class="images">
+                        <img 
                             class="image" 
                             src="./assets/photo1.jpg" 
-                            alt="photo1"> -->
+                            alt="photo1">
                         <img 
                             class="image" 
                             src="./assets/photo2.jpg" 
                             alt="photo1">
-                        <!-- <img 
+                        <img 
                             class="image" 
                             src="./assets/photo1.jpg" 
-                            alt="photo1"> -->
+                            alt="photo1">
                     </div>
                 </td>
             </tr>

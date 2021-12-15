@@ -13,25 +13,23 @@
     html,
     body {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: normal;
-        margin: 1rem;
         padding: 0;
         box-sizing: border-box;
         overflow: visible;
     }
 
     @page {
-        size: A4;
+        size: letter;
     }
 
     .header {
         padding: 0 0.5rem 0.5rem 0.5rem;
-        margin-bottom: 1rem;
     }
 
     .title {
-        font-size: 1.875rem;
+        font-size: 1.5rem;
         font-weight: bold;
         margin: 0;
         text-align: center;
@@ -71,7 +69,9 @@
 
     .image {
         margin: 1rem;
-        max-height: 20rem;
+        height: 200px;
+        object-fit: contain;
+        width: calc((100%/3) - 2rem);
     }
 
     ul {
@@ -88,9 +88,9 @@
 
     .footer {
         position: fixed;
-        left: 1rem;
-        right: 1rem;
-        bottom: 1rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -117,16 +117,12 @@
         margin-bottom: 1rem;
     }
 
-    .mb-8 {
-        margin-bottom: 2rem;
-    }
-
     .border-b-2 {
         border-bottom: 2px solid black;
     }
 
-    .h-8 {
-        height: 2rem;
+    .h-4 {
+        height: 1rem;
     }
 </style>
 
@@ -140,7 +136,7 @@
                     </div>
 
                     <div class="mb-4">
-                        <h2 class="subtitle text--underline mb-2">Indicent Information:</h2>
+                        <h2 class="subtitle text--underline">Indicent Information:</h2>
                         <table>
                             <tbody>
                                 <tr>
@@ -197,111 +193,66 @@
                         </table>
                     </div>
 
-                    <h2 class="subtitle text--underline mb-2">Image:</h2>
-                    <div class="images mb-4">
+                    <h2 class="subtitle text--underline">Image:</h2>
+                    <div class="images">
                         <img 
                             class="image" 
                             src="./assets/photo1.jpg" 
                             alt="photo1">
-                        <!-- <img 
+                        <img 
                             class="image" 
                             src="./assets/photo2.jpg" 
-                            alt="photo1"> -->
-                        <!-- <img 
+                            alt="photo1">
+                        <img 
                             class="image" 
                             src="./assets/photo1.jpg" 
-                            alt="photo1"> -->
+                            alt="photo1">
                     </div>
 
-                    <h2 class="subtitle text--underline mb-2">Program Guidelines:</h2>
+                    <h2 class="subtitle text--underline">Program Guidelines:</h2>
                     <ul class="mb-4">
                         <li>
-                            <p class="text-normal">Bag, tie and place waste/recycling bags inside or on top of
-                                container(s)
-                                provided.
-                            </p>
+                            <p class="text-normal">Bag, tie and place waste/recycling bags inside or on top of container(s) provided.</p>
                         </li>
                         <li>
-                            <p class="text-normal">Bag, tie and place waste/recycling bags inside or on top of
-                                container(s)
-                                provided.
-                            </p>
+                            <p class="text-normal">Do not place bags on floor.</p>
                         </li>
                         <li>
-                            <p class="text-normal">Bag, tie and place waste/recycling bags inside or on top of
-                                container(s)
-                                provided.
-                            </p>
+                            <p class="text-normal">Place container(s) with tied bag(s) outside door bewteen 6pm-8pm.</p>
                         </li>
                         <li>
-                            <p class="text-normal">Bag, tie and place waste/recycling bags inside or on top of
-                                container(s)
-                                provided.
-                            </p>
+                            <p class="text-normal">Collection begings promptly at 8pm every Sunday-Thursday.</p>
                         </li>
                         <li>
-                            <p class="text-normal">Bag, tie and place waste/recycling bags inside or on top of
-                                container(s)
-                                provided.
-                            </p>
-                        </li>
-                        <li>
-                            <p class="text-normal">Bag, tie and place waste/recycling bags inside or on top of
-                                container(s)
-                                provided.
-                            </p>
+                            <p class="text-normal">Please bring container(s) back inside by 9am the next morning.</p>
                         </li>
                     </ul>
 
-                    <h2 class="subtitle text--underline mb-2">Please Remember:</h2>
+                    <h2 class="subtitle text--underline">Please Remember:</h2>
                     <div class="mb-4">
-                        <p class="text-normal">One green recycling bag will be provied on Sundays (container must be out
-                            to
-                            receive).
-                        </p>
-                        <p class="text-normal">One green recycling bag will be provied on Sundays (container must be out
-                            to
-                            receive).
-                        </p>
-                        <p class="text-normal">One green recycling bag will be provied on Sundays (container must be out
-                            to
-                            receive).
-                        </p>
-                        <p class="text-normal">One green recycling bag will be provied on Sundays (container must be out
-                            to
-                            receive).
-                        </p>
-                        <p class="text-normal">One green recycling bag will be provied on Sundays (container must be out
-                            to
-                            receive).
-                        </p>
-                        <p class="text-normal">One green recycling bag will be provied on Sundays (container must be out
-                            to
-                            receive).
-                        </p>
-                        <p class="text-normal">One green recycling bag will be provied on Sundays (container must be out
-                            to
-                            receive).
-                        </p>
+                        <p class="text-normal">One green recycling bag will be provied on Sundays (container must be out to receive).</p>
+                        <p class="text-normal">All cardboard must be broken down (small boxes only).</p>
+                        <p class="text-normal">No loose waste.</p>
+                        <p class="text-normal">No bags over 25lbs (Max. 2 bag limit per night, standard 13 gallon bag should be used).</p>
+                        <p class="text-normal">No broken glass or sharp objects.</p>
+                        <p class="text-normal">No oversized items (i.e.- furniture, boxes, etc...).</p>
+                        <p class="text-normal">Pet waste should be double bagged and included in waste bag.</p>
                     </div>
 
                     <p class="text-normal mb-4">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, minima doloribus earum, eos iure
-                        nesciunt
-                        quas
-                        rerum in aperiam tempore beatae est suscipit, tempora autem? Assumenda officiis rem modi
-                        praesentium?
+                        The program rules are non-negotiable and you may be fined for violations. With your participation, we will be able
+                        to keep our property clear of waste and reduce leaks and spills which attract unwanted pests and rodents.
                     </p>
 
-                    <p class="text-normal mb-8">Thank you,</p>
+                    <p class="text-normal mb-4">Thank you,</p>
 
-                    <div class="signature mb-8">
+                    <div class="signature mb-4">
                         <p class="text-normal">Managment</p>
                         <p class="text-normal mx-2">_______________________________________</p>
                         <p class="text-normal">(Signature)</p>
                     </div>
 
-                    <div class="signature mb-8">
+                    <div class="signature">
                         <p class="text-normal">Comments:</p>
                         <p class="text-normal mx-2">_______________________________________</p>
                     </div>
@@ -311,7 +262,7 @@
         <tfoot>
             <tr>
                 <td>
-                    <div class="h-8"></div>
+                    <div class="h-4"></div>
                 </td>
             </tr>
         </tfoot>
