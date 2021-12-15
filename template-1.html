@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 1</title>
+</head>
+
+<style>
+    html,
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        margin: 1rem;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: visible;
+    }
+
+    @page {
+        size: A4;
+    }
+
+    .header {
+        padding: 0 0.5rem 0.5rem 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .title {
+        font-size: 1.875rem;
+        font-weight: bold;
+        margin: 0;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .table__header {
+        width: 20%;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .text-normal {
+        font-size: 1rem;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .text-small {
+        font-size: 0.875rem;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image {
+        margin: 1rem;
+        max-height: 32rem;
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 1.5rem;
+        list-style-type: "\2014\a0";
+    }
+
+    .signature {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .footer {
+        position: fixed;
+        left: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .text--red {
+        color: red;
+    }
+
+    .text--underline {
+        text-decoration: underline;
+    }
+
+    .mx-2 {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .mb-2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .mb-4 {
+        margin-bottom: 1rem;
+    }
+
+    .mb-8 {
+        margin-bottom: 2rem;
+    }
+
+    .border-b-2 {
+        border-bottom: 2px solid black;
+    }
+
+    .h-8 {
+        height: 2rem;
+    }
+</style>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="header">
+                        <h1 class="title">Bell Four Points <br> Unit on Watchlist</h1>
+                    </div>
+
+                    <div class="mb-4">
+                        <h2 class="subtitle text--underline mb-2">Watchlist Information:</h2>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="table__header">
+                                        <p class="text-normal">Property Name:</p>
+                                    </td>
+                                    <td>
+                                        <p class="text-normal">Bell Four Points</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table__header">
+                                        <p class="text-normal">Service Date:</p>
+                                    </td>
+                                    <td>
+                                        <p class="text-normal">Wednesday, March 23, 2016</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table__header">
+                                        <p class="text-normal">Time of violation:</p>
+                                    </td>
+                                    <td>
+                                        <p class="text-normal">3/23/2016 at 8:48 PM</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table__header">
+                                        <p class="text-normal">Unit #:</p>
+                                    </td>
+                                    <td>
+                                        <p class="text-normal">14008</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2 class="subtitle text--underline mb-2">Image:</h2>
+                    <div class="images mb-4">
+                        <!-- <img 
+                            class="image" 
+                            src="./assets/photo1.jpg" 
+                            alt="photo1"> -->
+                        <img 
+                            class="image" 
+                            src="./assets/photo2.jpg" 
+                            alt="photo1">
+                        <!-- <img 
+                            class="image" 
+                            src="./assets/photo1.jpg" 
+                            alt="photo1"> -->
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <div class="h-8"></div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="footer">
+        <p class="text-small">3/23/2016</p>
+        <p class="text-small">Green Door Valet</p>
+        <p class="text-small">Page 1 of 1</p>
+    </div>
+</body>
+
+</html>
